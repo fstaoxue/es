@@ -24,18 +24,6 @@ public class EsUtil {
         init();
     }
 
-    /*private static void init(){
-        Settings settings = Settings.builder().put("cluster.name", "elasticsearch")
-                .put("client.transport.ignore_cluster_name", true)
-//                .put("client.transport.sniff",true)
-                .build();
-        try {
-            client=new PreBuiltTransportClient(settings).addTransportAddress(new TransportAddress(InetAddress.getByName("localhost"),9300));
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
-    }*/
-
 
     private static void init(){
         try {

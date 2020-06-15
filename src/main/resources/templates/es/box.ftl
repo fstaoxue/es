@@ -14,8 +14,8 @@
     <div >
         <div class="row">
             <button type="button" class="btn btn-primary" id="queryEsAll">查询全部</button>
-            <button type="button" class="btn btn-primary" id="queryEsAllWithBox">框选全部</button>
-            <button type="button" class="btn btn-primary" id="queryEsAllWithBoxAndTime">框选带时间</button>
+            <button type="button" class="btn btn-primary" id="queryEsAllWithBox">框选查全部</button>
+            <button type="button" class="btn btn-primary" id="queryEsAllWithBoxAndTime">框选带时间查</button>
             <input id="startDate" placeholder="开始时间" class="Wdate" type="text" onClick="WdatePicker({el:this,dateFmt:'yyyy-MM-dd HH:mm:ss'})">
             <input id="endDate" placeholder="结束时间" class="Wdate" type="text" onClick="WdatePicker({el:this,dateFmt:'yyyy-MM-dd HH:mm:ss'})">
         </div>
@@ -135,7 +135,7 @@
                     }
                 },
                 error:function(){
-                    layer.msg("查询mysql失败");
+                    layer.msg("查询ES失败");
                 }
             })
         });
